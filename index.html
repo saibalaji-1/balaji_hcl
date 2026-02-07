@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HCLTech</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+    }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #1a4fff;
+    }
+
+    .navbar nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+    }
+
+    .btn {
+      padding: 8px 15px;
+      background: #1a4fff;
+      color: white;
+      border-radius: 5px;
+    }
+
+    /* Hero */
+    .hero {
+      height: 70vh;
+      background: linear-gradient(to right, #b3e5fc, #e3f2fd);
+      display: flex;
+      align-items: center;
+      padding: 60px;
+    }
+
+    .hero-text {
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .hero button {
+      padding: 12px 20px;
+      background: #1a4fff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    /* Media Section */
+    .media-section {
+      padding: 60px 50px;
+      background: #eef2f7;
+    }
+
+    .media-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 30px;
+    }
+
+    .media-left {
+      display: grid;
+      gap: 20px;
+    }
+
+    .media-card {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+      padding-bottom: 15px;
+    }
+
+    .media-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .media-card h4 {
+      padding: 10px 15px 5px;
+      color: #1a4fff;
+    }
+
+    .media-card p {
+      padding: 0 15px;
+      font-size: 14px;
+    }
+
+    .tag {
+      display: inline-block;
+      margin: 12px 15px 0;
+      font-size: 12px;
+      color: #1a4fff;
+      font-weight: bold;
+    }
+
+    .type {
+      display: block;
+      margin: 10px 15px 0;
+      font-size: 12px;
+      color: gray;
+    }
+
+    .media-featured {
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      padding-bottom: 20px;
+    }
+
+    .media-featured img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+    }
+
+    .media-featured h2 {
+      padding: 15px 20px 10px;
+      color: #1a4fff;
+    }
+
+    .media-featured p {
+      padding: 0 20px;
+      font-size: 15px;
+    }
+
+    .media-featured a {
+      display: inline-block;
+      margin: 15px 20px;
+      color: #1a4fff;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 50px;
+      background: #f5f7fa;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: #1a4fff;
+      margin-bottom: 10px;
+    }
+
+    /* Footer Banner */
+    .footer-banner {
+      text-align: center;
+      padding: 50px;
+      background: linear-gradient(to right, #3f51b5, #2196f3);
+      color: white;
+    }
+
+    /* Responsive */
+    @media(max-width: 900px) {
+      .media-container {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media(max-width: 800px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media(max-width: 500px) {
+      .cards {
+        grid-template-columns: 1fr;
+      }
+      .hero h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">HCLTech</div>
+    <nav>
+      <a href="#">What We Do</a>
+      <a href="#">Industries</a>
+      <a href="#">Ecosystem</a>
+      <a href="#">Careers</a>
+      <a href="#" class="btn">Contact Us</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>HCLTech Named to Fortune's World's Most Admired Companies 2026</h1>
+      <p>Recognized for technology-led innovation and value creation.</p>
+      <button>Read More →</button>
+    </div>
+  </section>
+
+  <!-- Info Cards -->
+  <section class="cards">
+    <div class="card">
+      <h3>45% Reduction</h3>
+      <p>In app development effort using AI tools.</p>
+    </div>
+    <div class="card">
+      <h3>20% Faster</h3>
+      <p>IT operations using AI-based monitoring.</p>
+    </div>
+    <div class="card">
+      <h3>$100M Saved</h3>
+      <p>Operational cost reduction with AI.</p>
+    </div>
+    <div class="card">
+      <h3>87% Time Cut</h3>
+      <p>Investigation time through AI systems.</p>
+    </div>
+  </section>
+
+  <!-- Footer Banner -->
+  <section class="footer-banner">
+    <h2>Have tech questions?</h2>
+    <p>Our AI answer engine can help.</p>
+  </section>
+
+  <!-- Media / Article Section -->
+  <section class="media-section">
+    <div class="media-container">
+
+      <div class="media-left">
+        <div class="media-card">
+          <img src="https://hcltech.imgix.net/sites/default/files/trends-insights/banner/2026-01/700x357_11.jpg?auto=enhance%2Ccompress%2Cformat&dpr=2&fit=crop&fm=webp&h=385&ixlib=php-4.1.0&upscale=true&usm=20&usmrad=2&usmthr=0&v=2&w=754 alt="">
+          <span class="tag">AI</span>
+          <h4>AI for inclusive growth</h4>
+          <p>Leadership lessons from Davos</p>
+          <span class="type">Article</span>
+        </div>
+
+        <div class="media-card">
+          <img src="https://hcltech.imgix.net/sites/default/files/inline-images/advancing-education.jpg" alt="">
+          <span class="tag">AI</span>
+          <h4>Advancing education with AI</h4>
+          <p>Preparing the workforce of tomorrow</p>
+          <span class="type">Article</span>
+        </div>
+      </div>
+
+      <div class="media-featured">
+        <img src= "https://hcltech.imgix.net/sites/default/files/analyst-report/summary-thumbnail/2026-01/vijay-guntur.jpg?q=80&sharp=20&w=520alt"="">
+        
+        <span class="tag">AI and GenAI</span>
+        <h2>Unlocking business value with AI</h2>
+        <p>
+          In an exclusive conversation, McKinsey decodes HCLTech’s
+          differentiated positioning and AI capabilities.
+        </p>
+        <a href="#">Read the full story →</a>
+        <span class="type">Article</span>
+      </div>
+
+    </div>
+  </section>
+
+  
+
+</body>
+</html>
